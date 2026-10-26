@@ -1,0 +1,56 @@
+.hero {
+  padding: 7rem 0 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: .9;
+  letter-spacing: -0.03em;
+}
+
+.title span {
+  display: block;
+  white-space: nowrap;
+}
+
+.script {
+  margin-top: -0.1em;
+  font-family: "rom", sans-serif;
+  font-size: 1.5em;
+}
+
+/* the mask wrappers SplitText creates */
+.title :global([class*="-mask"]) {
+  padding-block: 0.15em;
+  margin-block: -0.15em;
+}
+
+.sub {
+  max-width: 520px;
+  margin: 1.25rem auto 0;
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.mockup {
+  display: grid;
+  width: min(100%, 900px);
+  aspect-ratio: 16 / 10;
+  place-items: center;
+  margin: 3.5rem auto 0;
+  border: 2px dashed rgb(0 0 0 / 25%);
+  border-radius: 16px;
+  background: rgb(255 255 255 / 55%);
+  color: rgb(0 0 0 / 50%);
+  font-weight: 500;
+}

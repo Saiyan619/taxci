@@ -1,0 +1,178 @@
+.section {
+  --plan-accent: var(--orange-500);
+  --plan-accent-soft: var(--orange-300);
+  scroll-margin-top: 5rem;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.sub {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+
+.toggle {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 60%);
+  backdrop-filter: blur(8px);
+}
+
+.toggleBtn {
+  padding: 0.45rem 1.2rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  width: min(100%, 1000px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2.5rem auto 0;
+  align-items: stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #fff;
+  text-align: left;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 8%);
+}
+
+.featured {
+  background:
+    linear-gradient(200deg, rgb(26 12 4 / 48%) 0%, rgb(26 12 4 / 72%) 100%),
+    url("/aura%20wallpaper.jpg") center / cover no-repeat;
+  color: #fff;
+  box-shadow: 0 16px 40px rgb(242 106 13 / 28%);
+}
+
+.icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--plan-accent);
+  color: #fff;
+}
+
+.name {
+  margin: 1rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.blurb {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin: 1.25rem 0 0;
+}
+
+.amount {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.per {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.billed {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.list {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.5rem 0 1.75rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--plan-accent);
+}
+
+.list li span {
+  color: var(--ink);
+}
+
+.featured .list li {
+  color: var(--plan-accent-soft);
+}
+
+.featured .list li span {
+  color: #fff;
+}
+
+.cta {
+  width: 100%;
+  margin-top: auto;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  background: var(--plan-accent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+  }
+}

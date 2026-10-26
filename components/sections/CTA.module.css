@@ -1,0 +1,68 @@
+.section {
+  scroll-margin-top: 5rem;
+  padding: 5rem 0;
+}
+
+.card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(100%, 1080px);
+  margin-inline: auto;
+  padding: clamp(2.5rem, 7vw, 5rem) 1.5rem;
+  border-radius: 24px;
+  background:
+    linear-gradient(200deg, rgba(26, 12, 4, 0.511) 0%, rgba(26, 12, 4, 0.315) 100%),
+    url("/aura%20wallpaper.jpg") center / cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.accent {
+  display: block;
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  max-width: 30rem;
+  margin: 1.25rem auto 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.ghost {
+  display: inline-flex;
+  align-items: center;
+  padding: 1.1rem 2.6rem;
+  border: 1px solid rgb(255 255 255 / 40%);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ghost:hover {
+  background: #fff;
+  color: #111;
+}

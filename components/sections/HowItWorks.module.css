@@ -1,0 +1,42 @@
+.section {
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.stack {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 360px);
+  margin: 2.5rem auto 0;
+  padding-bottom: 35vh;
+}
+
+.item {
+  position: sticky;
+  top: calc(8.5rem + var(--i) * 14px);
+  z-index: 100;
+  margin-bottom: 45vh;
+}
+
+.item:last-child {
+  margin-bottom: 20vh;
+}
+
+.tilt {
+  transform-origin: 50% 100%;
+  filter: drop-shadow(0 12px 24px rgb(0 0 0 / 14%));
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .item {
+    top: calc(5rem + var(--i) * 12px);
+  }
+}

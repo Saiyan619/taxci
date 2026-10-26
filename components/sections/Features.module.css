@@ -1,0 +1,28 @@
+.features {
+  scroll-margin-top: 5rem;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.grid {
+  display: grid;
+  width: min(100%, 940px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2.5rem auto 0;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}

@@ -1,0 +1,16 @@
+:root {
+  --orange-500: #f26a0d;
+  --orange-300: #ffb36b;
+  --cream: #f6f2ea;
+  --ink: #111;
+  --card: #fff;
+  --link: #111;
+  --link-hover: #555;
+
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --container: 1200px;
+  --fs-hero: clamp(2.5rem, 7vw, 5.5rem);
+  --fs-h2: clamp(1.8rem, 4vw, 3rem);
+}

@@ -1,0 +1,40 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.primary {
+  background: var(--orange-500);
+  color: #fff;
+}
+
+.dark {
+  background: #000;
+  color: #fff;
+}
+
+.sm {
+  padding: 0.6rem 1.1rem;
+  font-size: 0.85rem;
+}
+
+.lg {
+  padding: 1.1rem 2.6rem;
+  font-size: 1.05rem;
+}
