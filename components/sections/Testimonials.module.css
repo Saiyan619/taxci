@@ -112,6 +112,11 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
   .card {
     grid-template-columns: 1fr;
     gap: 1.5rem;

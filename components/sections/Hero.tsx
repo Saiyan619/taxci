@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import SplitReveal from "@/components/ui/SplitReveal";
 import styles from "./Hero.module.css";
@@ -25,7 +26,14 @@ export default function Hero() {
         </div>
 
         <div className={styles.mockup}>
-          <span>App preview</span>
+          <Image
+            src="/taxcimockup-1.png"
+            alt="Taxci app preview"
+            width={1129}
+            height={688}
+            priority
+            className={styles.mockupImage}
+          />
         </div>
       </div>
     </section>
