@@ -36,7 +36,7 @@ export default function Navbar() {
         ))}
       </nav>
 
-      <Button href="#get-started" size="sm" className={styles.cta}>
+      <Button href="#get-started" size="sm" animated className={styles.cta}>
         Get Started
       </Button>
     </header>

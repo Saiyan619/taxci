@@ -80,6 +80,7 @@ export default function HowItWorks() {
                   title={step.title}
                   body={step.body}
                   media={step.media}
+                  icon={step.icon}
                 />
               </div>
             </div>

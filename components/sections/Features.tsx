@@ -16,6 +16,7 @@ export default function Features() {
               title={feature.title}
               body={feature.body}
               media={feature.media}
+              icon={feature.icon}
             />
           ))}
         </div>

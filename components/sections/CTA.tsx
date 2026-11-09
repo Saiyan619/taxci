@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Button from "@/components/ui/Button";
 import SplitReveal from "@/components/ui/SplitReveal";
 import styles from "./CTA.module.css";
@@ -18,10 +17,12 @@ export default function CTA() {
           </p>
 
           <div className={styles.actions}>
-            <Button href="/signup">Sign up free</Button>
-            <Link href="/app" className={styles.ghost}>
+            <Button href="/signup" animated>
+              Sign up free
+            </Button>
+            <Button href="/app" variant="ghost" animated className={styles.ghost}>
               Open app
-            </Link>
+            </Button>
           </div>
         </div>
       </div>

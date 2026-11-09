@@ -17,9 +17,9 @@ export const stats = [
 ];
 
 export const compare = {
-  raw: "yo i just want a cool slider thingy that shows messy thoughts vs good words. make it slide good.",
+  raw: "hey, just checking if you saw my last email. i really need an update on this and don't want it to get lost.",
   polished:
-    "I envision an interactive, fluid slider component designed to seamlessly contrast raw conceptual ideation with refined, articulated expression.",
+    "Hi, I wanted to follow up on my previous email and see if there are any updates. I would appreciate your response when you have a chance.",
 };
 
 export const features = [
@@ -28,20 +28,23 @@ export const features = [
     title: "Text to Speech",
     body: "Speak your thoughts out loud and Taxci turns your voice into clean, written words, exactly the way you meant to say them.",
     media: "/Gemini_Generated_Image_1e77ov1e77ov1e77.jpg",
+    icon: "voice",
   },
   {
     id: "tone",
     title: "Tone Context",
     body: "Pick the situation, from a polite decline to a firm negotiation, and Taxci rewrites your message in the right tone.",
     media: "/Gemini_Generated_Image_8fisfp8fisfp8fis.jpg",
+    icon: "tone",
   },
   {
     id: "scribe",
     title: "Intelligent Scribe",
     body: "Dump messy notes and half-formed ideas. Taxci reads the context and turns them into clear, confident writing.",
     media: "/Gemini_Generated_Image_sez59usez59usez5.jpg",
+    icon: "scribe",
   },
-];
+] as const;
 
 export const steps = [
   {
@@ -49,20 +52,23 @@ export const steps = [
     title: "Tone Context",
     body: "Pick the situation, from a polite decline to a firm negotiation, and Taxci rewrites your message in the right tone.",
     media: "/Gemini_Generated_Image_l01i13l01i13l01i.jpg",
+    icon: "tone",
   },
   {
     id: "dump",
     title: "Dump Your Thoughts",
     body: "Type, paste or speak your raw thoughts. Messy is fine, Taxci works out what you actually meant.",
     media: "/Gemini_Generated_Image_tsnpoqtsnpoqtsnp (1).jpg",
+    icon: "thoughts",
   },
   {
     id: "send",
     title: "Send With Confidence",
     body: "Copy the polished version or save it to your articulations, ready to send in seconds.",
     media: "/Gemini_Generated_Image_p8pi9kp8pi9kp8pi.jpg",
+    icon: "send",
   },
-];
+] as const;
 
 export const testimonials = [
   {

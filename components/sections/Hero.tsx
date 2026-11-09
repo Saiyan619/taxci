@@ -19,10 +19,12 @@ export default function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <Button href="#features" variant="dark">
+          <Button href="#features" variant="dark" animated>
             Features
           </Button>
-          <Button href="#get-started">Get Started</Button>
+          <Button href="#get-started" animated>
+            Get Started
+          </Button>
         </div>
 
         <div className={styles.mockup}>

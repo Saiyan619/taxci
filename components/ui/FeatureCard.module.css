@@ -28,11 +28,14 @@
 }
 
 .icon {
+  display: grid;
   width: 34px;
   height: 34px;
   margin-top: 0.9rem;
+  place-items: center;
   border-radius: 8px;
   background: #1c1c1c;
+  color: #fff;
 }
 
 .title {
