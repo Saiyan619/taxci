@@ -19,34 +19,6 @@
   opacity: 0.75;
 }
 
-.toggle {
-  display: inline-flex;
-  gap: 0.25rem;
-  margin-top: 1.5rem;
-  padding: 0.25rem;
-  border-radius: 999px;
-  background: rgb(255 255 255 / 60%);
-  backdrop-filter: blur(8px);
-}
-
-.toggleBtn {
-  padding: 0.45rem 1.2rem;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.active {
-  background: var(--ink);
-  color: #fff;
-}
-
 .grid {
   display: grid;
   width: min(100%, 1000px);
@@ -169,6 +141,7 @@
   transform: translateY(-2px);
   filter: brightness(1.1);
 }
+
 
 @media (max-width: 900px) {
   .grid {

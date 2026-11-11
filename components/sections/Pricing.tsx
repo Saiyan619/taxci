@@ -1,12 +1,7 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import { plans } from "@/data/content";
 import SplitReveal from "@/components/ui/SplitReveal";
 import styles from "./Pricing.module.css";
-
-type Billing = "monthly" | "yearly";
 
 function Check() {
   return (
@@ -46,8 +41,6 @@ function PlanIcon({ featured }: { featured: boolean }) {
 }
 
 export default function Pricing() {
-  const [billing, setBilling] = useState<Billing>("monthly");
-
   return (
     <section className={styles.section} id="pricing">
       <div className="container">
@@ -55,22 +48,6 @@ export default function Pricing() {
         <p className={styles.sub}>
           Choose the plan that fits how you write. Change or cancel any time.
         </p>
-
-        <div className={styles.toggle} role="group" aria-label="Billing period">
-          {(["monthly", "yearly"] as const).map((period) => (
-            <button
-              key={period}
-              type="button"
-              aria-pressed={billing === period}
-              className={`${styles.toggleBtn} ${
-                billing === period ? styles.active : ""
-              }`}
-              onClick={() => setBilling(period)}
-            >
-              {period === "monthly" ? "Monthly" : "Yearly"}
-            </button>
-          ))}
-        </div>
 
         <div className={styles.grid}>
           {plans.map((plan) => (
@@ -85,15 +62,11 @@ export default function Pricing() {
               <p className={styles.blurb}>{plan.blurb}</p>
 
               <p className={styles.price}>
-                <span className={styles.amount}>${plan[billing]}</span>
-                {plan.monthly > 0 && <span className={styles.per}>/mo</span>}
+                <span className={styles.amount}>${plan.monthly}</span>
+                {plan.monthly > 0 && <span className={styles.per}>/month</span>}
               </p>
               <p className={styles.billed}>
-                {plan.monthly === 0
-                  ? "Free forever"
-                  : billing === "monthly"
-                    ? "Billed monthly"
-                    : "Billed yearly"}
+                {plan.monthly === 0 ? "Free forever" : "Billed monthly"}
               </p>
 
               <ul className={styles.list}>
