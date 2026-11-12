@@ -17,10 +17,16 @@ export default function CTA() {
           </p>
 
           <div className={styles.actions}>
-            <Button href="/signup" animated>
+            <Button href="https://taxi-nine-pi.vercel.app/" animated newTab>
               Sign up free
             </Button>
-            <Button href="/app" variant="ghost" animated className={styles.ghost}>
+            <Button
+              href="https://taxi-nine-pi.vercel.app/"
+              variant="ghost"
+              animated
+              newTab
+              className={styles.ghost}
+            >
               Open app
             </Button>
           </div>

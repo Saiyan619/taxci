@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { plans } from "@/data/content";
 import SplitReveal from "@/components/ui/SplitReveal";
 import styles from "./Pricing.module.css";
@@ -78,9 +77,14 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <Link href="#get-started" className={styles.cta}>
+              <a
+                href="https://taxi-nine-pi.vercel.app/"
+                className={styles.cta}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {plan.cta}
-              </Link>
+              </a>
             </article>
           ))}
         </div>

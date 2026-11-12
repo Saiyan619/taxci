@@ -22,7 +22,7 @@ export default function Hero() {
           <Button href="#features" variant="dark" animated>
             Features
           </Button>
-          <Button href="#get-started" animated>
+          <Button href="https://taxi-nine-pi.vercel.app/" animated newTab>
             Get Started
           </Button>
         </div>

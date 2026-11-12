@@ -36,7 +36,13 @@ export default function Navbar() {
         ))}
       </nav>
 
-      <Button href="#get-started" size="sm" animated className={styles.cta}>
+      <Button
+        href="https://taxi-nine-pi.vercel.app/"
+        size="sm"
+        animated
+        newTab
+        className={styles.cta}
+      >
         Get Started
       </Button>
     </header>

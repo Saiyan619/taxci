@@ -9,6 +9,7 @@ type Props = {
   className?: string;
   onClick?: () => void;
   animated?: boolean;
+  newTab?: boolean;
 };
 
 function AnimatedLabel({ children }: { children: string }) {
@@ -43,6 +44,7 @@ export default function Button({
   className = "",
   onClick,
   animated = false,
+  newTab = false,
 }: Props) {
   const cls = `${styles.btn} ${styles[variant]} ${styles[size]} ${
     animated ? styles.animated : ""
@@ -55,6 +57,19 @@ export default function Button({
     );
 
   if (href) {
+    if (newTab) {
+      return (
+        <a
+          href={href}
+          className={cls}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {label}
+        </a>
+      );
+    }
+
     return (
       <Link href={href} className={cls}>
         {label}
