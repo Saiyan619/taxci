@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   description:
     "Turn messy thoughts, voice notes, and rough drafts into clear, confident writing with Taxci.",
   icons: {
-    icon: "/icons8-t-50.png",
-    shortcut: "/icons8-t-50.png",
-    apple: "/icons8-t-50.png",
+    icon: "/T.png",
+    shortcut: "/T.png",
+    apple: "/T.png",
   },
 };
 

@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <Link href="/" className={styles.logo} aria-label="Taxci home">
-        TAXCI
+        <img className={styles.logo_img} src="./TAXCI.png" alt="taxci_logo" />
       </Link>
 
       <nav className={styles.nav} aria-label="Main">
